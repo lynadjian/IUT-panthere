@@ -2,11 +2,11 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="seo, google, site web, site internet, agence design paris, agence design, agence design,agence design,agence design,agence design,agence design,agence design,agence design,agence design">
+    <meta name="keywords" content="seo, google, site web, site internet, agence design paris, agence design">
     <meta name="description" content="Panthère, agence de web design innovante, crée des sites modernes et performants pour booster votre présence en ligne."/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
-   
+
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -23,12 +23,12 @@
             padding: 0;
         }
 
-        /* En-tête et footer restent tels quels */
+        /* En-tête et footer restent blancs */
         header, footer {
             background-color: white;
         }
-        
-        /* Section principale avec couleur de fond distincte */
+
+        /* Section principale */
         .main-content {
             background-color: #32343D;
             color: white;
@@ -37,7 +37,7 @@
     </style>
 </head>
 <body>
-    <!-- En-tête blanche -->
+    <!-- En-tête blanche avec bandeau sur toute la largeur -->
     <header class="navbar" style="background-color: white; width: 100%; padding: 10px 0;">
         <div class="container-fluid">
             <nav class="navbar row">
@@ -65,16 +65,75 @@
 
     <!-- Contenu principal avec fond gris foncé -->
     <div class="main-content">
-        <!-- Contenu de votre page d'accueil ici, par exemple : -->
+        <!-- Section de présentation -->
         <section>
-            <h1 class="text-center">Bienvenue à l'Agence La Panthère</h1>
-            <p>Notre mission est d'aider les entreprises à être visibles et attractives en ligne grâce à des sites modernes et performants.</p>
-            <!-- Autres sections de contenu -->
+            <div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax" id="bloc-1-hero">
+                <div class="container bloc-lg">
+                    <div class="row tight-width-whitespace">
+                        <div class="col-sm-12 text-center">
+                            <h1 class="text-center hero-bloc-text tc-white">Agence La Panthère</h1>
+                            <p class="text-center tc-white" style="font-size: 1.2em;">
+                                L'agence Panthère est une agence de web design qui aide les entreprises à devenir attractives et visibles sur internet.
+                            </p>
+                            <a href="contact.html" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Services -->
+        <section class="bloc bgc-white l-bloc" id="bloc-2-services">
+            <div class="container bloc-md">
+                <h2 class="text-center">Nos Services</h2>
+                <div class="row">
+                    <div class="col-sm-4 text-center">
+                        <span class="et-icon-browser sm-shadow icon-dark-slate-blue icons icon-lg"></span>
+                        <h3>Web Design</h3>
+                        <p>Que vous ayez un site web qui a besoin d’un rafraîchissement ou que vous partiez de zéro, laissez-nous vous réaliser un design dont vous serez fier.</p>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <span class="et-icon-presentation sm-shadow icon-dark-slate-blue icons icon-lg"></span>
+                        <h3>Stratégie</h3>
+                        <p>Nous élaborons des stratégies pour aligner votre design sur vos objectifs commerciaux.</p>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <span class="et-icon-edit sm-shadow icon-dark-slate-blue icons icon-lg"></span>
+                        <h3>Illustrations</h3>
+                        <p>Notre équipe de graphistes crée des illustrations uniques pour enrichir votre contenu.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Témoignage -->
+        <section class="testimonial" style="text-align: center; color: #666; font-style: italic; max-width: 700px; margin: 30px auto;">
+            <p>"L'agence La Panthère est une excellente agence web ! Les web designers ont réussi à capturer l'essence de notre entreprise et à l'intégrer à notre site. Cela nous a aidé à doubler nos ventes en ligne à Lyon."</p>
+            <div class="testimonial-author" style="font-weight: bold; margin-top: 10px;">Maxime Guibard, PDG de À vos fourchettes</div>
+        </section>
+
+        <!-- Section Portfolio -->
+        <section class="bloc bgc-white l-bloc" id="bloc-4-portfolio">
+            <div class="container bloc-lg">
+                <h2 class="text-center">Nos Réalisations</h2>
+                <div class="row tight-width-whitespace portfolio-row">
+                    <div class="col-sm-6">
+                        <img src="img/1.jpg" alt="Refonte d'un site pour un journal local" class="img-responsive portfolio-thumb">
+                        <h3 class="mg-md text-center">Refonte d'un site web pour un journal local</h3>
+                        <p class="text-center">Nous avons créé une nouvelle identité visuelle pour un journal lyonnais.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="img/2.jpg" alt="Création d'un site pour photographes" class="img-responsive portfolio-thumb">
+                        <h3 class="mg-md text-center">Création d'un site web pour photographes</h3>
+                        <p class="text-center">Nous avons conçu la plateforme idéale pour laisser place aux clichés des photographes.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 
     <!-- Footer identique à la page 1 avec fond coloré et icônes de réseaux sociaux -->
-    <footer style="background-color: #FF7F50; color: white; text-align: center; padding: 20px 0;">
+    <footer style="background-color: #FF7F50; color: white; padding: 20px 0;">
         <div class="container footer-content text-center">
             <p style="color: white; font-size: 1.1em; margin: 0;">Agence La Panthère - Agence web basée à Lyon.</p>
             <p style="color: white; font-size: 1.1em; margin: 0;">2 Place Sathonay, 69001 Lyon</p>
@@ -96,4 +155,5 @@
     </footer>
 </body>
 </html>
+
 
