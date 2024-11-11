@@ -7,16 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
 
+    <!-- Lien vers une police Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
 
     <title>Restons en Contact : Votre Projet, Notre Expertise</title>
 
     <style>
-        /* Styles pour la navbar et le footer, similaires à la page 1 */
-        .navbar {
-            background-color: transparent;
-            border: none;
+        /* Appliquer la couleur de fond sur toute la page */
+        body {
+            background-color: #32343D;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar, Footer et Contenu principal */
+        .navbar, footer {
+            background-color: #32343D;
         }
         .navbar-brand img {
             height: 40px;
@@ -25,25 +36,20 @@
             color: white;
             font-size: 1.1em;
         }
-        .footer-content {
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            font-size: 1.1em;
-        }
-        .social-icons a {
-            color: white;
-            margin: 0 10px;
-            font-size: 1.5em;
-        }
-        
+
         /* Style du formulaire de contact */
         #bloc-contact h1, #bloc-contact p {
-            color: #333;
+            color: white;
             font-size: 1.2em;
         }
         #bloc-contact .form-control {
             margin-bottom: 15px;
+            background-color: #424450;
+            color: white;
+            border: none;
+        }
+        #bloc-contact .form-control::placeholder {
+            color: #cccccc;
         }
         #bloc-contact button {
             background-color: #ff7f50;
@@ -54,6 +60,18 @@
         }
         #bloc-contact button:hover {
             background-color: #e6704d;
+        }
+
+        /* Footer avec icônes de réseaux sociaux */
+        .footer-content {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1.1em;
+        }
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5em;
         }
 
         /* Style pour Google Map et informations de contact */
@@ -98,7 +116,7 @@
         </header>
 
         <!-- Section Formulaire de Contact -->
-        <section class="bloc bg-light l-bloc" id="bloc-contact">
+        <section class="bloc l-bloc" id="bloc-contact">
             <div class="container bloc-lg">
                 <h1 class="text-center hero-bloc-text">Parlons Web Design !</h1>
                 <p class="text-center">
@@ -139,7 +157,7 @@
         </section>
 
         <!-- Bloc Footer -->
-        <footer class="bloc bg-dark text-white">
+        <footer class="bloc">
             <div class="container footer-content">
                 <p>Agence La Panthère - Agence web basée à Lyon.</p>
                 <p>2 Place Sathonay, 69001 Lyon</p>
@@ -155,4 +173,5 @@
     </div>
 </body>
 </html>
+
 
