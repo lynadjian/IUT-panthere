@@ -67,32 +67,21 @@
             background-color: #e6704d;
         }
 
-        /* Footer en bandeau blanc avec texte noir */
+        /* Footer sans bandeau blanc et texte en blanc */
         footer {
-            background-color: white;
-            width: 100%;
-            padding: 20px 0;
-            color: black;
+            background-color: #32343D;
+            color: white;
             text-align: center;
+            padding: 20px 0;
         }
         .footer-content {
-            color: black;
+            color: white;
             font-size: 1.1em;
         }
         .social-icons a {
-            color: black !important;
+            color: white !important;
             margin: 0 10px;
             font-size: 1.5em;
-        }
-
-        /* Style pour Google Map et informations de contact */
-        .contact-info, .map-container {
-            padding: 15px;
-        }
-        .map-container {
-            height: 300px;
-            border-radius: 8px;
-            overflow: hidden;
         }
     </style>
 </head>
@@ -100,7 +89,7 @@
     <!-- Conteneur principal -->
     <div class="page-container">
         
-        <!-- Bloc Header avec navbar en pleine largeur -->
+        <!-- Bloc Header avec navbar en bandeau blanc sur toute la largeur -->
         <header class="bloc l-bloc full-width" id="bloc-0">
             <div class="container-fluid bloc-sm">
                 <nav class="navbar row">
@@ -167,9 +156,9 @@
             </div>
         </section>
 
-        <!-- Bloc Footer en bandeau blanc sur toute la largeur -->
-        <footer class="full-width">
-            <div class="container-fluid footer-content">
+        <!-- Footer avec texte et icônes en blanc, sans bandeau -->
+        <footer>
+            <div class="container footer-content">
                 <p>Agence La Panthère - Agence web basée à Lyon.</p>
                 <p>2 Place Sathonay, 69001 Lyon</p>
                 <div class="social-icons">
@@ -184,6 +173,7 @@
     </div>
 </body>
 </html>
+
 
 
 
