@@ -22,9 +22,10 @@
             padding: 0;
         }
 
-        /* Navbar blanche */
+        /* Navbar blanche sur toute la largeur */
         .navbar, footer {
             background-color: white;
+            width: 100%;
         }
         .navbar .navbar-brand img {
             height: 40px;
@@ -33,7 +34,14 @@
             color: black !important;
             font-size: 1.1em;
         }
-
+        
+        /* Container full-width pour header et footer */
+        .full-width {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
         /* Style du formulaire de contact */
         #bloc-contact h1, #bloc-contact p, #bloc-contact label, #bloc-contact button {
             color: white !important;
@@ -87,9 +95,9 @@
     <!-- Conteneur principal -->
     <div class="page-container">
         
-        <!-- Bloc Header avec navbar -->
-        <header class="bloc l-bloc" id="bloc-0">
-            <div class="container bloc-sm">
+        <!-- Bloc Header avec navbar en pleine largeur -->
+        <header class="bloc l-bloc full-width" id="bloc-0">
+            <div class="container-fluid bloc-sm">
                 <nav class="navbar row">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="index.html">
@@ -154,9 +162,9 @@
             </div>
         </section>
 
-        <!-- Bloc Footer -->
-        <footer class="bloc">
-            <div class="container footer-content">
+        <!-- Bloc Footer en pleine largeur -->
+        <footer class="bloc full-width">
+            <div class="container-fluid footer-content">
                 <p>Agence La Panthère - Agence web basée à Lyon.</p>
                 <p>2 Place Sathonay, 69001 Lyon</p>
                 <div class="social-icons">
@@ -171,5 +179,6 @@
     </div>
 </body>
 </html>
+
 
 
