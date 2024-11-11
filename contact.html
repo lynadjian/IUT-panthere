@@ -23,7 +23,7 @@
         }
 
         /* Navbar blanche sur toute la largeur */
-        .navbar, footer {
+        .navbar {
             background-color: white;
             width: 100%;
         }
@@ -34,16 +34,16 @@
             color: black !important;
             font-size: 1.1em;
         }
-        
-        /* Container full-width pour header et footer */
-        .full-width {
-            width: 100%;
-            margin: 0;
-            padding: 0;
+
+        /* Style pour le titre "Parlons Web Design !" */
+        #bloc-contact h1 {
+            font-family: Impact, sans-serif;
+            font-size: 3em;
+            color: white !important;
         }
         
         /* Style du formulaire de contact */
-        #bloc-contact h1, #bloc-contact p, #bloc-contact label, #bloc-contact button {
+        #bloc-contact p, #bloc-contact label, #bloc-contact button {
             color: white !important;
             font-size: 1.2em;
         }
@@ -67,11 +67,16 @@
             background-color: #e6704d;
         }
 
-        /* Footer blanc avec texte noir */
-        .footer-content {
+        /* Footer en bandeau blanc avec texte noir */
+        footer {
+            background-color: white;
+            width: 100%;
+            padding: 20px 0;
             color: black;
             text-align: center;
-            padding: 20px 0;
+        }
+        .footer-content {
+            color: black;
             font-size: 1.1em;
         }
         .social-icons a {
@@ -124,8 +129,8 @@
         <!-- Section Formulaire de Contact -->
         <section class="bloc l-bloc" id="bloc-contact">
             <div class="container bloc-lg">
-                <h1 class="text-center hero-bloc-text" style="color: white !important;">Parlons Web Design !</h1>
-                <p class="text-center" style="color: white !important;">
+                <h1 class="text-center hero-bloc-text">Parlons Web Design !</h1>
+                <p class="text-center">
                     Nous sommes ravis que vous souhaitiez collaborer avec notre agence. Parlez-nous de votre projet en complétant le formulaire ci-dessous.
                 </p>
                 <div class="row">
@@ -149,10 +154,10 @@
 
                     <!-- Informations de Contact et Carte Google Maps -->
                     <div class="col-sm-6 contact-info">
-                        <p style="color: white !important;">Contactez-nous directement :</p>
-                        <p style="color: white !important;">Email : contact@agencelapanthere.com</p>
-                        <p style="color: white !important;">Adresse : 2 place Sathonay, 69001 Lyon</p>
-                        <p style="color: white !important;">Horaires : Ouvert de 9h à 18h, du lundi au vendredi</p>
+                        <p>Contactez-nous directement :</p>
+                        <p>Email : contact@agencelapanthere.com</p>
+                        <p>Adresse : 2 place Sathonay, 69001 Lyon</p>
+                        <p>Horaires : Ouvert de 9h à 18h, du lundi au vendredi</p>
                         <div class="map-container">
                             <!-- Google Map intégrée -->
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2896.581255314245!2d4.831209216246867!3d45.769885779105534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea54ec3e1815%3A0x94a32cbcd7be7a5a!2s2%20Pl.%20Sathonay%2C%2069001%20Lyon%2C%20France!5e0!3m2!1sen!2sfr!4v1691790291254!5m2!1sen!2sfr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -162,8 +167,8 @@
             </div>
         </section>
 
-        <!-- Bloc Footer en pleine largeur -->
-        <footer class="bloc full-width">
+        <!-- Bloc Footer en bandeau blanc sur toute la largeur -->
+        <footer class="full-width">
             <div class="container-fluid footer-content">
                 <p>Agence La Panthère - Agence web basée à Lyon.</p>
                 <p>2 Place Sathonay, 69001 Lyon</p>
@@ -179,6 +184,7 @@
     </div>
 </body>
 </html>
+
 
 
 
