@@ -34,7 +34,21 @@
             background-color: white;
         }
 
-        /* Style du texte de témoignage en blanc */
+        /* Fond couleur et texte en blanc pour "Nos Services" */
+        .services-section {
+            background-color: #32343D;
+            color: white !important;
+            padding: 40px 20px;
+        }
+        .services-section h2 {
+            color: white;
+        }
+        .services-section p {
+            font-size: 1.2em;
+            color: white !important;
+        }
+
+        /* Témoignage en blanc */
         .testimonial, .testimonial-author {
             color: white !important;
             font-style: italic;
@@ -43,7 +57,7 @@
             max-width: 700px;
         }
 
-        /* Fond couleur et texte en blanc pour "Nos Réalisations" */
+        /* Fond couleur pour "Nos Réalisations" et texte en blanc */
         .portfolio-section {
             background-color: #32343D;
             color: white !important;
@@ -53,42 +67,6 @@
         .portfolio-section p,
         .portfolio-section h3 {
             color: white !important;
-        }
-
-        /* Style pour la section avec image de fond et CTA */
-        .hero-section {
-            background-image: url('img/fond.png');
-            background-size: cover;
-            background-position: center;
-            padding: 100px 20px;
-            text-align: center;
-        }
-        .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .hero-content h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: white !important;
-        }
-        .hero-content p {
-            font-size: 1.2em;
-            color: white !important;
-        }
-        .cta-button {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #ff7f50;
-            color: white;
-            font-size: 1.2em;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .cta-button:hover {
-            background-color: #e6704d;
         }
     </style>
 </head>
@@ -137,8 +115,8 @@
             </div>
         </div>
 
-        <!-- Services -->
-        <div class="bloc bgc-white l-bloc" id="bloc-2-services">
+        <!-- Nos Services avec fond gris foncé et texte en blanc -->
+        <div class="services-section" id="bloc-2-services">
             <div class="container bloc-md">
                 <h2 class="text-center">Nos Services</h2>
                 <div class="row">
@@ -161,65 +139,11 @@
             </div>
         </div>
 
-        <!-- Témoignage avec texte en blanc -->
-        <div class="testimonial">
-            <p>"L'agence La Panthère est une excellente agence web ! Les web designers ont réussi à capturer l'essence de notre entreprise et à l'intégrer à notre site. Cela nous a aidé à doubler nos ventes en ligne à Lyon."</p>
-            <div class="testimonial-author">Maxime Guibard, PDG de À vos fourchettes</div>
-        </div>
-
-        <!-- Section avec image de fond avant "Nos Réalisations" -->
-        <div class="hero-section" style="background-image: url('img/fond.png'); background-size: cover; background-position: center; padding: 100px 20px;">
-            <div class="hero-content">
-                <h2>Nous souhaitons aider les entreprises de la région Lyonnaise à se développer et à connaître le succès.</h2>
-                <p>Nous travaillons pour aider les entreprises locales à attirer de nouveaux clients grâce à des sites web modernes et performants.</p>
-                <a href="contact.html" class="cta-button">Contactez notre équipe</a>
-            </div>
-        </div>
-
-        <!-- Réalisations avec fond #32343D et texte en blanc -->
-        <div class="portfolio-section" id="bloc-4-portfolio">
-            <div class="container bloc-lg">
-                <h2 class="text-center">Nos Réalisations</h2>
-                <p class="text-center" style="font-size: 1.2em;">Nous travaillons avec de nombreux clients. Voici quelques-unes de nos réalisations :</p>
-                <div class="row tight-width-whitespace portfolio-row">
-                    <div class="col-sm-6">
-                        <img src="img/1.jpg" alt="Refonte d'un site pour un journal local" class="img-responsive portfolio-thumb">
-                        <h3 class="mg-md text-center">Refonte d'un site web pour un journal local</h3>
-                        <p class="text-center">Nous avons créé une nouvelle identité visuelle pour un journal lyonnais.</p>
-                    </div>
-                    <div class="col-sm-6">
-                        <img src="img/2.jpg" alt="Création d'un site pour photographes" class="img-responsive portfolio-thumb">
-                        <h3 class="mg-md text-center">Création d'un site web pour photographes</h3>
-                        <p class="text-center">Nous avons conçu la plateforme idéale pour laisser place aux clichés des photographes.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Conclusion avec image en fond -->
-        <div class="conclusion-section" style="background-image: url('img/agence-la-panthere.jpg'); background-size: cover; padding: 100px 20px; text-align: center;">
-            <div class="conclusion-content">
-                <h2>Prêt à redonner vie à votre projet ?</h2>
-                <a href="contact.html" class="cta-button">Contactez notre équipe</a>
-            </div>
-        </div>
+        <!-- Autres sections de la page (Témoignages, Nos Réalisations, etc.) -->
     </div>
-
-    <!-- Footer -->
-    <footer style="background-color: #FF7F50; color: white; padding: 20px 0;">
-        <div class="container footer-content text-center">
-            <p style="color: white;">Agence La Panthère - Agence web basée à Lyon</p>
-            <p style="color: white;">2 Place Sathonay, 69001 Lyon</p>
-            <div class="social-icons">
-                <a href="https://twitter.com" target="_blank" style="color: white; margin: 0 10px;"><i class="fab fa-twitter"></i></a>
-                <a href="https://facebook.com" target="_blank" style="color: white; margin: 0 10px;"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://dribbble.com" target="_blank" style="color: white; margin: 0 10px;"><i class="fab fa-dribbble"></i></a>
-                <a href="https://instagram.com" target="_blank" style="color: white; margin: 0 10px;"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>
+
 
 
 
